@@ -1,0 +1,74 @@
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.maincontent {
+  padding-top: 181px;
+  padding-bottom: 182px;
+  padding-right: 196px;
+  padding-left: 196px;
+}
+body > h2 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.articles {
+  display: flex;
+  height: 420px;
+  align-items: flex-start;
+  gap: 40px;
+  align-self: stretch;
+}
+.article {
+  max-width: 376px;
+  width: 100%;
+}
+.article-img {
+  height: 165px;
+}
+.article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.article-text {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.article-text > h3 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.article-text > p {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.article-btn {
+  width: 150px;
+  padding: 8px;
+  align-items: center;
+  color: #70c05b;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  border-radius: 4px;
+  background: var(--main-secondary-muted, #e5ffde);
+}
