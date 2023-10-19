@@ -1,74 +1,166 @@
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: Rubik;
 }
 
-.maincontent {
-  padding-top: 181px;
-  padding-bottom: 182px;
-  padding-right: 196px;
-  padding-left: 196px;
-}
-body > h2 {
+.shapka {
+  position: fixed;
+  z-index: 100;
   color: #414141;
-  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: max-content;
+  align-items: centers;
+}
+.shapka h2 {
+  text-align: center;
+}
+h2 {
+  color: #414141;
   font-size: 36px;
   font-weight: 700;
   line-height: 150%;
 }
 .articles {
-  display: flex;
+  display: grid;
+  max-width: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(376px, 1fr));
   height: 420px;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 40px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  max-width: 376px;
+  padding: 10px;
   align-self: stretch;
 }
-.article {
-  max-width: 376px;
-  width: 100%;
-}
+
 .article-img {
-  height: 165px;
-}
-.article-img img {
+  position: relative;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 4px;
 }
-.article-text {
+img {
+  width: 100%;
+}
+time {
+  color: #8f8f8f;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.article-btn {
+  border-radius: 4px;
+  background: #70c05b;
+  width: 150px;
+  max-width: max-content;
+  text-decoration: none;
+  padding: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: auto;
+}
+.svgimg {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+* {
+  font-family: "Rubik", sans-serif;
+}
+
+.cardholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(272px, 1fr));
+  gap: 40px;
+  min-width: 272px;
+}
+.card {
+  width: 100%;
+  height: 349px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.cardimg {
+  display: grid;
+  width: 100%;
+  height: 160px;
+}
+.cardimg.img {
+  width: 100%;
+  height: 100%;
+  height: 160px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.iconimg {
+  position: absolute;
+  left: 232px;
+}
+
+.iconsale {
+  position: absolute;
+  top: 118px;
+}
+.cardtxt {
   display: flex;
-  padding: 10px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: center;
+  margin: 8px;
+}
+
+.price {
+  width: 100%;
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  align-items: flex-end;
   align-self: stretch;
 }
-.article-text > h3 {
-  color: #414141;
-  font-family: Rubik;
-  font-size: 18px;
+
+.nosale .bold {
   font-weight: 700;
-  line-height: 150%;
-}
-.article-text > p {
+  font-size: 18px;
   color: #414141;
-  font-family: Rubik;
+}
+.nosale .nonbold {
   font-size: 16px;
   font-weight: 400;
-  line-height: 150%;
+  color: #606060;
 }
-.article-btn {
-  width: 150px;
-  padding: 8px;
-  align-items: center;
+.descriptiontext {
+  font-size: 12px;
+  font-weight: 400;
+  color: #bfbfbf;
+  margin-bottom: 10px;
+}
+.maincontent2 h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.binbutton button {
+  width: 100%;
   color: #70c05b;
   text-align: center;
-  font-family: Rubik;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  text-decoration: none;
   border-radius: 4px;
-  background: var(--main-secondary-muted, #e5ffde);
+  border: 1px solid #70c05b;
 }
